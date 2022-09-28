@@ -1,7 +1,7 @@
 import "styled-components";
-import { dark } from "@theme/colors/dark";
+import { themes } from "@theme/index";
 
-type DarkTheme = typeof dark;
+type DarkTheme = typeof themes;
 
 declare module "styled-components" {
   export interface DefaultTheme extends DarkTheme {}
