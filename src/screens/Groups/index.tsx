@@ -1,9 +1,9 @@
-import { Text, View } from "react-native";
+import * as S from "./styles";
 
 export const Groups = () => {
   return (
-    <View>
-      <Text>Mauricio</Text>
-    </View>
+    <S.ContainerGroup>
+      <S.Title>Group</S.Title>
+    </S.ContainerGroup>
   );
 };

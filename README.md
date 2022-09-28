@@ -14,7 +14,19 @@ Os principais pontos que foram abordados nesse módulo como **CSS-in-JS** com **
 
 ```bash
 # Depois de configurar o seu ambiente clone o projeto
-git clone
+git clone https://github.com/mauriciogirardi/teams.git
+
+# Entre na pasta
+cd teams
+
+# Instale as dependência
+yarn
+
+# Rode o projeto
+yarn start
+
+# Abra o projeto no seu celular ou no emulador
+App Expo Go
 ```
 
 #### :pencil2: Figma
