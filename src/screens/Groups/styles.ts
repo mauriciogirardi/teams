@@ -2,13 +2,7 @@ import styled from "styled-components/native";
 
 export const ContainerGroup = styled.View`
   flex: 1;
-  background: ${({ theme }) => theme["gray-700"]};
-  align-items: center;
-  justify-content: center;
-`;
+  padding: 24px;
 
-export const Title = styled.Text`
-  color: ${({ theme }) => theme["gray-100"]};
-  font-weight: bold;
-  font-size: 50px;
+  background: ${({ theme }) => theme.COLORS.GRAY_600};
 `;
