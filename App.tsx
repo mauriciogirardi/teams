@@ -1,4 +1,3 @@
-import { ThemeProvider } from "styled-components/native";
 import {
   useFonts,
   Roboto_400Regular,
@@ -6,8 +5,9 @@ import {
 } from "@expo-google-fonts/roboto";
 
 import { Groups } from "@screens/Groups";
-import { themes } from "@theme/index";
 import { Loading } from "@components/Loading";
+import { StatusBar } from "react-native";
+import { Providers } from "@context/index";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,8 +16,13 @@ export default function App() {
   });
 
   return (
-    <ThemeProvider theme={themes}>
+    <Providers>
+      <StatusBar
+        backgroundColor="transparent"
+        barStyle="light-content"
+        translucent
+      />
       {fontsLoaded ? <Groups /> : <Loading />}
-    </ThemeProvider>
+    </Providers>
   );
 }
