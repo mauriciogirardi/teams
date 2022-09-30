@@ -4,7 +4,7 @@ export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.COLORS.GRAY_600};
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_PRIMARY};
 `;
 
 export const LoadIndicator = styled.ActivityIndicator.attrs(({ theme }) => ({

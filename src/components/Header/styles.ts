@@ -26,5 +26,5 @@ export const SunIcon = styled(Sun).attrs(({ theme }) => ({
 
 export const MoonIcon = styled(MoonStars).attrs(({ theme }) => ({
   size: 36,
-  color: theme.COLORS.GRAY_400,
+  color: theme.COLORS.GRAY_SECOND,
 }))``;

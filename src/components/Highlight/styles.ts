@@ -16,5 +16,5 @@ export const Subtitle = styled.Text`
   text-align: center;
   font-size: ${({ theme }) => theme.FONT_SIZE.MD}px;
   font-family: ${({ theme }) => theme.FONT_FAMILY.REGULAR};
-  color: ${({ theme }) => theme.COLORS.GRAY_300};
+  color: ${({ theme }) => theme.COLORS.GRAY_SUBTITLE};
 `;

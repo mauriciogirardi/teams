@@ -1,39 +1,43 @@
 export const themes = {
   COLORS: {
     DARK: {
-      GRAY_700: "#121214",
-      GRAY_600: "#202024",
-      GRAY_500: "#29292E",
-      GRAY_400: "#323238",
-      GRAY_300: "#7C7C8A",
-      GRAY_200: "#C4C4CC",
-      GRAY_100: "#E1E1E6",
+      BACKGROUND_PRIMARY: "#202024",
+      GRAY_PRIMARY: "#29292E",
+      GRAY_SECOND: "#323238",
       WHITE: "#FFFFFF",
+      GRAY_SUBTITLE: "#7C7C8A",
+      GRAY_TITLE: "#C4C4CC",
+      GRAY_TEXT: "#E1E1E6",
+
+      GRAY_700: "#121214",
 
       LOADING: "#A217E3",
 
-      GREEN_500: "#00875F",
-      GREEN_400: "#00B37E",
+      GREEN_PRIMARY: "#00B37E",
+      GREEN_SECOND: "#00875F",
 
-      RED_500: "#AA2834",
-      RED_400: "#F75A68",
+      RED_PRIMARY: "#AA2834",
+      RED_SECOND: "#F75A68",
     },
 
     LIGHT: {
-      GRAY_700: "#121214",
-      GRAY_600: "#E1E1E6",
-      GRAY_500: "#29292E",
-      GRAY_400: "#323238",
-      GRAY_300: "#7C7C8A",
-      GRAY_200: "#C4C4CC",
-      GRAY_100: "#E1E1E6",
+      BACKGROUND_PRIMARY: "#FFFFFF",
+      GRAY_PRIMARY: "#F1F1F1",
+      GRAY_SECOND: "#323238",
       WHITE: "#323238",
+      GRAY_SUBTITLE: "#7C7C8A",
+      GRAY_TITLE: "#323238",
+      GRAY_TEXT: "#E1E1E6",
 
-      GREEN_500: "#00875F",
-      GREEN_400: "#00B37E",
+      GRAY_700: "#121214",
 
-      RED_500: "#AA2834",
-      RED_400: "#F75A68",
+      LOADING: "#A217E3",
+
+      GREEN_PRIMARY: "#00B37E",
+      GREEN_SECOND: "#00875F",
+
+      RED_PRIMARY: "#AA2834",
+      RED_SECOND: "#F75A68",
     },
   },
 
