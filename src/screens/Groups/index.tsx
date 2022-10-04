@@ -6,6 +6,8 @@ import { ListEmpty } from "@components/ListEmpty";
 import { Highlight } from "@components/Highlight";
 import { Header } from "@components/Header";
 import * as S from "./styles";
+import { Button } from "@components/Button";
+import { ListPlus } from "phosphor-react-native";
 
 export const Groups = () => {
   const [groups, setGroups] = useState<string[]>([]);
@@ -24,6 +26,9 @@ export const Groups = () => {
           <ListEmpty message="Que tal cadastrar a primeira turma?" />
         )}
       />
+
+      {/*@ts-ignore*/}
+      <Button icon={ListPlus}>Criar nova turma</Button>
     </S.ContainerGroup>
   );
 };
