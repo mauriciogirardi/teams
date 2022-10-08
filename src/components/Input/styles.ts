@@ -1,7 +1,9 @@
 import { TextInput } from "react-native";
 import styled, { css } from "styled-components/native";
 
-export const Container = styled(TextInput)`
+export const Container = styled(TextInput).attrs(({ theme }) => ({
+  placeholderTextColor: theme.COLORS.GRAY_SUBTITLE,
+}))`
   flex: 1;
   padding: 16px;
   min-height: 56px;
