@@ -1,11 +1,4 @@
-import {
-  Container,
-  Logo,
-  BackIcon,
-  SunIcon,
-  MoonIcon,
-  Background,
-} from "./styles";
+import { Container, Logo, BackIcon, SunIcon, MoonIcon } from "./styles";
 
 import logoImg from "@assets/logo.png";
 import { useTheme } from "@context/ThemeContext";
@@ -20,7 +13,6 @@ export function Header({ showBackButton = false }: HeaderProps) {
 
   return (
     <>
-      <Background />
       <Container>
         {showBackButton && (
           <TouchableOpacity>

@@ -14,26 +14,17 @@ export const Logo = styled.Image`
   height: 55px;
 `;
 
-export const Background = styled.View`
-  background-color: #202024;
-  width: 120%;
-  height: 120px;
-  position: absolute;
-  top: 0;
-  left: 0;
-`;
-
 export const BackIcon = styled(CaretLeft).attrs(({ theme }) => ({
   size: 36,
-  color: "#fff",
+  color: theme.COLORS.GRAY_TITLE,
 }))``;
 
 export const SunIcon = styled(Sun).attrs(({ theme }) => ({
   size: 36,
-  color: "#fff",
+  color: theme.COLORS.GRAY_TITLE,
 }))``;
 
 export const MoonIcon = styled(MoonStars).attrs(({ theme }) => ({
   size: 36,
-  color: "#fff",
+  color: theme.COLORS.GRAY_TITLE,
 }))``;
