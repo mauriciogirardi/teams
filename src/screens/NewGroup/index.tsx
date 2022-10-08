@@ -1,5 +1,4 @@
 import { UserPlus } from "phosphor-react-native";
-import { useTheme } from "styled-components/native";
 
 import { Container, Content, Icon } from "./styles";
 import { Highlight } from "@components/Highlight";
@@ -8,8 +7,6 @@ import { Header } from "@components/Header";
 import { Input } from "@components/Input";
 
 export function NewGroup() {
-  const { COLORS } = useTheme();
-
   return (
     <Container>
       <Header showBackButton />
@@ -21,10 +18,7 @@ export function NewGroup() {
           subtitle="crie a turma para adicionar as pessoas."
         />
 
-        <Input
-          placeholder="Nova turma"
-          placeholderTextColor={COLORS.GRAY_SUBTITLE}
-        />
+        <Input placeholder="Nova turma" />
 
         {/*@ts-ignore*/}
         <Button icon={UserPlus} style={{ marginTop: 20 }}>
