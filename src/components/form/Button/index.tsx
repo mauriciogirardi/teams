@@ -1,7 +1,7 @@
-import {} from "react";
-import { IconProps } from "phosphor-react-native";
 import { ForwardRefExoticComponent, RefAttributes } from "react";
 import { TouchableOpacityProps } from "react-native";
+import { IconProps } from "phosphor-react-native";
+
 import { ButtonTypeStyleProps, Container, Text } from "./styles";
 
 type ButtonProps = TouchableOpacityProps & {

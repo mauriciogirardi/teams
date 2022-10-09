@@ -1,7 +1,7 @@
 import { MaterialIcons } from "@expo/vector-icons";
+import { ButtonIcon } from "@components/form/ButtonIcon";
 
 import { Container, Icon, Name } from "./styles";
-import { ButtonIcon } from "@components/ButtonIcon";
 
 type PlayerCardProps = {
   name: string;

@@ -1,19 +1,18 @@
 import { useState } from "react";
 import { FlatList } from "react-native";
-
-import { GroupCard } from "@components/GroupCard";
-import { ListEmpty } from "@components/ListEmpty";
-import { Highlight } from "@components/Highlight";
-import { Header } from "@components/Header";
-import * as S from "./styles";
-import { Button } from "@components/Button";
 import { ListPlus } from "phosphor-react-native";
+
+import { Highlight } from "@components/common/Highlight";
+import { ListEmpty } from "@components/common/ListEmpty";
+import { GroupCard } from "@components/cards/GroupCard";
+import { Container } from "./styles";
+import { Header } from "@components/common/Header";
 
 export const Groups = () => {
   const [groups, setGroups] = useState<string[]>([]);
 
   return (
-    <S.ContainerGroup>
+    <Container>
       <Header />
       <Highlight title="Turmas" subtitle="jogue com a sua turma" />
 
@@ -29,6 +28,6 @@ export const Groups = () => {
 
       {/*@ts-ignore*/}
       <Button icon={ListPlus}>Criar nova turma</Button>
-    </S.ContainerGroup>
+    </Container>
   );
 };

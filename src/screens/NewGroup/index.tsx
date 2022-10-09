@@ -1,10 +1,10 @@
 import { UserPlus } from "phosphor-react-native";
 
 import { Container, Content, Icon } from "./styles";
-import { Highlight } from "@components/Highlight";
-import { Button } from "@components/Button";
-import { Header } from "@components/Header";
-import { Input } from "@components/Input";
+import { Highlight } from "@components/common/Highlight";
+import { Header } from "@components/common/Header";
+import { Button } from "@components/form/Button";
+import { Input } from "@components/form/Input";
 
 export function NewGroup() {
   return (

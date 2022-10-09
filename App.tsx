@@ -4,10 +4,10 @@ import {
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
 
-import { Players } from "@screens/Players";
-import { Loading } from "@components/Loading";
 import { StatusBar } from "react-native";
 import { Providers } from "@context/index";
+import { Players } from "@screens/Players";
+import { Loading } from "@components/common/Loading";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
