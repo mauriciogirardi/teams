@@ -26,6 +26,6 @@ export const NumberOfPlayers = styled.Text`
     css({
       color: theme.COLORS.GRAY_TEXT,
       fontFamily: theme.FONT_FAMILY.BOLD,
-      fontSize: `${theme.FONT_SIZE.SM}pc`,
+      fontSize: `${theme.FONT_SIZE.SM}px`,
     })}
 `;

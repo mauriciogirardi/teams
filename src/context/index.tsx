@@ -1,10 +1,10 @@
-import { ReactNode } from "react";
-import { ThemeProvider } from "./ThemeContext";
+import { ReactNode } from 'react'
+import { ThemeProvider } from './ThemeContext'
 
 type ProvidersProps = {
-  children: ReactNode;
-};
+  children: ReactNode
+}
 
 export function Providers({ children }: ProvidersProps) {
-  return <ThemeProvider>{children}</ThemeProvider>;
+  return <ThemeProvider>{children}</ThemeProvider>
 }

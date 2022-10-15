@@ -7,7 +7,7 @@ import {
 import { StatusBar } from "react-native";
 import { Providers } from "@context/index";
 import { Players } from "@screens/Players";
-import { Loading } from "@components/common/Loading";
+import { Loading } from "@components/Loading";
 
 export default function App() {
   const [fontsLoaded] = useFonts({

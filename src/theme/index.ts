@@ -21,7 +21,7 @@ export const themes = {
 
     LIGHT: {
       BACKGROUND_PRIMARY: "#FFFFFF",
-      BACKGROUND_SECONDARY: "#F1F1F1",
+      BACKGROUND_SECONDARY: "#E1E1E6",
       GRAY_PRIMARY: "#F1F1F1",
       GRAY_SECOND: "#323238",
       WHITE: "#323238",

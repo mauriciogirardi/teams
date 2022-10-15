@@ -2,11 +2,11 @@ import { useState } from "react";
 import { FlatList } from "react-native";
 import { ListPlus } from "phosphor-react-native";
 
-import { Highlight } from "@components/common/Highlight";
-import { ListEmpty } from "@components/common/ListEmpty";
-import { GroupCard } from "@components/cards/GroupCard";
+import { Highlight } from "@components/Highlight";
+import { ListEmpty } from "@components/ListEmpty";
+import { GroupCard } from "@components/GroupCard";
 import { Container } from "./styles";
-import { Header } from "@components/common/Header";
+import { Header } from "@components/Header";
 
 export const Groups = () => {
   const [groups, setGroups] = useState<string[]>([]);
