@@ -1,10 +1,13 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { AppRoutes } from "./app.routes";
+import { Container } from "./styles";
 
 export function Routes() {
   return (
-    <NavigationContainer>
-      <AppRoutes />
-    </NavigationContainer>
+    <Container>
+      <NavigationContainer>
+        <AppRoutes />
+      </NavigationContainer>
+    </Container>
   );
 }
