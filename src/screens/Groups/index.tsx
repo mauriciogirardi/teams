@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import { useState } from "react";
 import { FlatList } from "react-native";
 import { ListPlus } from "phosphor-react-native";
@@ -10,7 +11,10 @@ import { Header } from "@components/Header";
 import { Button } from "@components/Button";
 
 export const Groups = () => {
+  const navigation = useNavigation();
   const [groups, setGroups] = useState<string[]>([]);
+
+  const handleNewGroup = () => navigation.navigate("newGroups");
 
   return (
     <Container>
@@ -28,7 +32,9 @@ export const Groups = () => {
       />
 
       {/*@ts-ignore*/}
-      <Button icon={ListPlus}>Criar nova turma</Button>
+      <Button icon={ListPlus} onPress={handleNewGroup}>
+        Criar nova turma
+      </Button>
     </Container>
   );
 };

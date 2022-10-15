@@ -5,8 +5,14 @@ import { Highlight } from "@components/Highlight";
 import { Header } from "@components/Header";
 import { Button } from "@components/Button";
 import { Input } from "@components/Input";
+import { useNavigation } from "@react-navigation/native";
 
 export function NewGroup() {
+  const navigation = useNavigation();
+
+  const handleNewGroup = () =>
+    navigation.navigate("players", { group: "Mauricio" });
+
   return (
     <Container>
       <Header showBackButton />
@@ -20,8 +26,11 @@ export function NewGroup() {
 
         <Input placeholder="Nova turma" />
 
-        {/*@ts-ignore*/}
-        <Button icon={UserPlus} style={{ marginTop: 20 }}>
+        <Button
+          icon={UserPlus}
+          style={{ marginTop: 20 }}
+          onPress={handleNewGroup}
+        >
           Criar
         </Button>
       </Content>
