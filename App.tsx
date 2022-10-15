@@ -6,8 +6,8 @@ import {
 
 import { StatusBar } from "react-native";
 import { Providers } from "@context/index";
-import { Players } from "@screens/Players";
 import { Loading } from "@components/Loading";
+import { Routes } from "@routes/index";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,7 +22,7 @@ export default function App() {
         //barStyle="light-content"
         translucent
       />
-      {fontsLoaded ? <Players /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </Providers>
   );
 }

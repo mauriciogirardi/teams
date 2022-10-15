@@ -43,7 +43,9 @@ export function Players() {
           showsHorizontalScrollIndicator={false}
         />
 
-        <NumberOfPlayers>{players.length}</NumberOfPlayers>
+        {players.length > 0 && (
+          <NumberOfPlayers>{players.length}</NumberOfPlayers>
+        )}
       </HeaderList>
 
       <FlatList
