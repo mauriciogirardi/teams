@@ -17,6 +17,8 @@ export const themes = {
 
       RED_PRIMARY: "#AA2834",
       RED_SECOND: "#F75A68",
+
+      BLUE: "#008cff",
     },
 
     LIGHT: {
@@ -36,6 +38,8 @@ export const themes = {
 
       RED_PRIMARY: "#AA2834",
       RED_SECOND: "#F75A68",
+
+      BLUE: "#008cff",
     },
   },
 

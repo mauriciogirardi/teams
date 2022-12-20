@@ -6,15 +6,15 @@ export const Container = styled(TouchableOpacity)<FilterStyleProps>`
   ${({ theme, isActive }) =>
     isActive &&
     css({
-      border: `1px solid ${theme.COLORS.GREEN_SECOND}`,
+      border: `2px solid ${theme.COLORS.GREEN_SECOND}`,
     })}
 
   border-radius: 4px;
   margin-right: 12px;
   height: 38px;
-  width: 70px;
   align-items: center;
   justify-content: center;
+  padding: 0 10px;
 `;
 
 export const Title = styled.Text`

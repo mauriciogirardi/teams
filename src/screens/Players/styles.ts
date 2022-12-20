@@ -25,8 +25,11 @@ export const HeaderList = styled.View`
 export const NumberOfPlayers = styled.Text`
   ${({ theme }) =>
     css({
-      color: theme.COLORS.GRAY_TEXT,
+      color: theme.COLORS.BLUE,
       fontFamily: theme.FONT_FAMILY.BOLD,
       fontSize: `${theme.FONT_SIZE.SM}px`,
     })}
+
+  margin-left: 20px;
+  border-radius: 99999px;
 `;

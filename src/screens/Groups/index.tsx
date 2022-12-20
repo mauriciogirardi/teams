@@ -1,5 +1,5 @@
-import { useNavigation } from "@react-navigation/native";
-import { useState } from "react";
+import { useCallback, useState } from "react";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { FlatList } from "react-native";
 import { ListPlus } from "phosphor-react-native";
 
@@ -9,12 +9,30 @@ import { ListEmpty } from "@components/ListEmpty";
 import { GroupCard } from "@components/GroupCard";
 import { Header } from "@components/Header";
 import { Button } from "@components/Button";
+import { groupsGetAll } from "@storage/group/groupsGetAll";
 
 export const Groups = () => {
   const navigation = useNavigation();
   const [groups, setGroups] = useState<string[]>([]);
 
   const handleNewGroup = () => navigation.navigate("newGroups");
+  const handleOpenGroup = (group: string) =>
+    navigation.navigate("players", { group });
+
+  const fetchGroups = async () => {
+    try {
+      const storageGroups = await groupsGetAll();
+      setGroups(storageGroups);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useFocusEffect(
+    useCallback(() => {
+      fetchGroups();
+    }, [])
+  );
 
   return (
     <Container>
@@ -22,17 +40,24 @@ export const Groups = () => {
       <Highlight title="Turmas" subtitle="jogue com a sua turma" />
 
       <FlatList
-        data={groups}
+        data={groups.sort()}
         keyExtractor={(item) => item}
-        renderItem={({ item }) => <GroupCard title={item} />}
-        contentContainerStyle={groups.length === 0 && { flex: 1 }}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => (
+          <GroupCard title={item} onPress={() => handleOpenGroup(item)} />
+        )}
+        contentContainerStyle={[groups?.length === 0 && { flex: 1 }]}
         ListEmptyComponent={() => (
           <ListEmpty message="Que tal cadastrar a primeira turma?" />
         )}
       />
 
-      {/*@ts-ignore*/}
-      <Button icon={ListPlus} onPress={handleNewGroup}>
+      <Button
+        //@ts-ignore
+        icon={ListPlus}
+        onPress={handleNewGroup}
+        style={{ marginTop: 30 }}
+      >
         Criar nova turma
       </Button>
     </Container>
